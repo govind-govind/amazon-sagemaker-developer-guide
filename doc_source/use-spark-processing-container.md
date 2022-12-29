@@ -26,10 +26,10 @@ spark_processor = PySparkProcessor(
 
 spark_processor.run(
     submit_app="preprocess.py",
-    arguments=['s3_input_bucket', bucket,
-               's3_input_key_prefix', input_prefix,
-               's3_output_bucket', bucket,
-               's3_output_key_prefix', output_prefix]
+    arguments=['--s3_input_bucket', bucket,
+               '--s3_input_key_prefix', input_prefix,
+               '--s3_output_bucket', bucket,
+               '--s3_output_key_prefix', output_prefix]
 )
 ```
 
